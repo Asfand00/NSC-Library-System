@@ -82,5 +82,15 @@ public class NSCLibraryTest {
 
         // test method for null values, throws error message
         NSCMediaUtils.printMediaDetails(null);
+        System.out.println();
+
+        /* 
+        test method to make sure it can take Book, DVD, or Magazine
+        */
+        System.out.println("Testing NSCMediaUtils for each media item:");
+        System.out.println();
+        NSCMediaUtils.printMediaDetails(book1);
+        NSCMediaUtils.printMediaDetails(dvd1);
+        NSCMediaUtils.printMediaDetails(mag1);
     }
 }
